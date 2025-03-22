@@ -1,0 +1,253 @@
+.main {
+    overflow: hidden;
+}
+
+
+/* nav */
+
+.nav {
+    padding: 42px 20px 0 20px;
+    border-right: 3px solid #E3E7EF;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav__heading {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #235390;
+    margin-bottom: 32px;
+}
+
+.nav__list {
+    width: 100%;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.nav__item-link {
+    text-decoration: none;
+    height: 58px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #777777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 12px;
+    margin-bottom: 6px;
+    margin: 0;
+    outline: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.nav__item-link--chose {
+    color: #1CB0F6;
+    background-color: #DDF4FF;
+    border: 3px solid #84D8FF;
+    border-radius: 10px;
+}
+
+.nav__item-text {
+    width: 120px;
+    text-align: left;
+    margin-left: 32px;
+}
+
+
+/* interact */
+
+
+
+.interact__question-congratulations {
+    /* display: none; */
+    display: block;
+    text-align: center;
+    position: relative;
+    padding: 12px 10px;
+    border: 3px solid var(--grey-plus-1-color);
+    border-radius: 20px;
+    animation: Slide ease 0.3s;
+}
+
+.interact__question-active {
+    display: none;
+    /* display: block; */
+    text-align: center;
+    position: relative;
+    padding: 12px 18px;
+    border: 3px solid var(--grey-plus-1-color);
+    border-radius: 20px;
+    animation: Slide ease 0.3s;
+}
+
+.interact__question-title {
+    font-size: 2.5rem;
+    color: var(--main--text-color);
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.interact__question-text {
+    font-size: 2rem;
+    color: #928899;
+    font-weight: 500;
+    line-height: 2.5rem;
+    margin-bottom: 14px;
+    margin-bottom: 60px;
+}
+
+.interact__question-img {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    bottom: 4%;
+    right: 6%;
+}
+
+
+/* Profile */
+
+.table-rating {
+    padding: 42px 8px 0 8px;
+}
+
+.table-rating__title {
+    font-size: 3rem;
+    color: var(--black-color);
+    font-weight: 700;
+}
+
+.table-rating__header {
+    display: flex;
+    justify-content: center;
+    margin: 42px;
+}
+
+.table-rating__content {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.table-rating__nav {
+    display: flex;
+    font-size: 2.4rem;
+    color: var(--grey-color);
+    font-weight: 700;
+    border-bottom: 3px solid var(--grey-plus-1-color);
+}
+
+.table-rating__nav-overview {
+    margin-right: 4px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.table-rating__nav-active {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.table-rating__nav-overview.table-rating__nav--active,
+.table-rating__nav-active.table-rating__nav--active {
+    color: var(--btn-primary-color);
+    border-bottom: 3px solid var(--btn-primary-color);
+    animation: Slide ease 0.3s;
+}
+
+@keyframes Slide {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* overview */
+
+.table-rating__overview {
+    display: flex;
+    flex-direction: column;
+    /* display: none; */
+    animation: Slide ease 0.3s;
+}
+
+.table-rating__overview-intop {
+    margin-top: 32px;
+    align-self: flex-end;
+    display: flex;
+    border: 3px solid var(--grey-plus-1-color);
+    border-radius: 15px;
+}
+
+.table-rating__overview-intop-10 {
+    border-right: 1px solid var(--grey-plus-1-color)
+}
+
+.table-rating__overview-intop-10,
+.table-rating__overview-intop-50 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--black-color);
+    padding: 12px 26px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.table-rating__overview-intop-10.intop--active,
+.table-rating__overview-intop-50.intop-active {
+    color: var(--btn-primary-color);
+}
+
+.table-rating__overview-list-ratings {
+    align-self: center;
+    margin-top: 42px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.table-rating__overview-item-rating {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--main--text-color);
+    margin-bottom: 16px;
+}
+
+.table-rating__overview-item-rating-index {
+    font-size: 3rem;
+    width: 70px;
+}
+
+.table-rating__overview-item-rating-avata {
+    border-radius: 50%;
+    max-width: 40px;
+    margin-right: 12px;
+    width: 100%;
+    height: 40px;
+    object-fit: cover;
+
+}
+
+.table-rating__overview-item-rating-points {
+    margin-left: auto;
+}
+
+.table-rating__overview-btn-download-more {
+    align-self: center;
+    margin-top: 24px;
+}

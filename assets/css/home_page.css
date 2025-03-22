@@ -1,0 +1,148 @@
+.main {
+    overflow: hidden;
+}
+
+
+
+
+/* my-course */
+
+.my-course {
+    padding: 42px 8px 0 8px;
+    /* display: none; */
+    display: block;
+}
+
+.my-course__plan {
+    background-color: var(--background-card);
+    display: flex;
+    border: 3px solid var(--box-shadow-card);
+    border-radius: 20px;
+    padding: 16px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+.my-course__plan-tick-box {
+    display: flex;
+    align-items: center;
+}
+
+.my-course__plan-img {
+    width: 108px;
+    height: 76px;
+    margin-right: 14px;
+    border: 3.076px solid var(--box-shadow-card);
+    border-radius: 11.7913px;
+    object-fit: contain;
+}
+
+.my-course__heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.my-course__plan-content {
+    flex: 1;
+}
+
+.my-course__plan-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.my-course__plan-heading-text {
+    display: inline-block;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+
+.my-course__plan-heading-img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.my-course__plan-heading-sub {
+    font-size: 1.8rem;
+    color: var(--text-secondary);
+    font-weight: 700;
+}
+
+.my-course__plan-heading-sub {
+    margin-bottom: 14px;
+}
+
+.my-course__plan-percent {
+    margin-right: 36px;
+}
+
+.my-course__plan-bar {
+    width: 100%;
+    height: 16px;
+    position: relative;
+    background-color: var(--background-bar-color);
+    border-radius: 5px;
+}
+
+
+/* percent English */
+
+.my-course__plan-bar-value-english {
+    position: absolute;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* percent */
+    width: 0;
+    background-color: var(--green-color);
+}
+
+
+/* percent Japan */
+
+.my-course__plan-bar-value-japan {
+    position: absolute;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* percent */
+    width: 10%;
+    background-color: var(--green-color);
+}
+
+.my-course__plan-tick {
+    margin-top: 18px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.my-course__plan-tick-img {
+    width: 26px;
+    height: 26px;
+}
+
+.my-course__plan-tick-number {
+    margin: 0 14px;
+}
+
+.my-course__plan-tick-btn {
+    margin-left: auto;
+}

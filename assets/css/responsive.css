@@ -1,0 +1,424 @@
+    /*
+
+    Kich thuoc responsive
+    mobile : 700px
+    tablet: 1150px
+    laptop: 1536px
+    */
+
+    @media only screen and (max-width: 1536px) {
+        .list_course-detail__content-container {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .nav__heading-logo {
+            display: none;
+        }
+
+        .row.main-page {
+            gap: 10px;
+            margin: 0;
+
+        }
+
+        .conjunction_container {
+            justify-content: center;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+        .conjunction {
+
+
+            justify-content: space-between;
+
+        }
+
+    }
+
+    @media only screen and (max-width: 1250px) {
+        .list_course-detail__content-container {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+
+    @media only screen and (max-width: 1150px) {
+        .list_course-detail__content-container {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .nav-container {
+            width: 100px;
+        }
+
+        .nav__item-text {
+            display: none;
+        }
+
+        .nav__heading {
+            display: none;
+        }
+
+        .nav__heading-logo {
+            display: block;
+        }
+
+        .course-detail__content-container {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+    }
+
+    @media only screen and (max-width: 1000px) {
+        .menu_right-container {
+            display: none;
+        }
+    }
+
+    @media only screen and (max-width: 900px) {
+
+        .menu_right-container {
+            display: none;
+        }
+
+        html {
+            font-size: 60%;
+        }
+
+        .course-detail__content-container {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .list_course-detail__content-container {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .course-detail__plan-header {
+            flex-direction: column;
+        }
+
+        .conjunction_container {
+            padding-left: 0;
+        }
+
+        .conjunction {
+            justify-content: center;
+
+        }
+
+
+    }
+
+    @media only screen and (max-width: 700px) {
+        html {
+            font-size: 50%;
+        }
+
+        .introduce_website {
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+
+        }
+
+        .course_khoahoc,
+        .course_hocvien,
+        .course__item--separate::after {
+            display: none;
+        }
+
+        .course__item.nation {
+            padding: 0 10px;
+        }
+
+        .footer__container {
+            flex-direction: column;
+        }
+
+        .slider__img {
+            display: none;
+        }
+
+        .nav__course {
+            display: none;
+        }
+
+        .profile__statistical-content {
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
+
+        .setting-container {
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .setting-box__item-content {
+            width: 100%;
+        }
+
+
+
+        .nav-container {
+            display: none;
+        }
+
+
+
+        .nav_mobile {
+            display: block;
+        }
+
+        .nav_mobile ul {
+            flex-direction: row;
+        }
+
+        .menu_right-container {
+            display: none;
+        }
+
+        .grid {
+            padding-bottom: 150px;
+        }
+
+        .profile__header {
+            flex-direction: column;
+        }
+
+        .setting-box__item {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .edit-target__content {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .conjunction {
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .study_review_button_container {
+            flex-direction: row;
+        }
+
+        .conjunction_container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .study__footer_popup-container {
+            flex-direction: column;
+        }
+
+        .why_use_container {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            display: grid;
+            gap: 20px;
+        }
+
+        .introduce_platform {
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+            display: grid;
+            gap: 20px;
+        }
+
+        .info-wrap-form {
+            gap: 10px;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .comment-item__wrap {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .comment-left {
+            width: 100%;
+            box-shadow: 0px 7px 2px #c1c9cb;
+        }
+
+        .comment-right {
+            gap: 20px;
+
+        }
+
+        .comment-right-person {
+            box-shadow: 0px 8px 2px #c1c9cb;
+        }
+
+        .tabcontrol-item {
+            padding: 0px;
+            margin-right: 10px;
+
+        }
+
+
+
+    }
+
+    @media only screen and (max-width: 500px) {
+
+        .list_course-detail__content-container {
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
+    }
+
+
+    @media(max-width: 1023px) {
+        .app__container {
+            margin-top: calc(var(--header-height) + 46px);
+        }
+
+        .hide-on-mobile-table {
+            display: none;
+        }
+
+        .header__cart-list {
+            position: fixed;
+            right: 0;
+            width: 100%;
+            padding: 0 calc((100% - 644px) / 2);
+            top: var(--header-height);
+        }
+
+        .header__cart-list::after {
+            display: none;
+        }
+
+        .header__sort-bar {
+            display: flex;
+        }
+
+        .app__content {
+            padding-top: 8px;
+        }
+
+        .mobile-category {
+            display: block;
+        }
+
+        .footer__download-app-link {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer__download-app-img {
+            margin: 4px 0;
+        }
+    }
+
+    @media(min-width:740px) and (max-width:1023px) {
+        :root {
+            --header-height: 80px;
+            --narbar-height: 0px;
+        }
+
+        .hide-on-table {
+            display: none;
+        }
+
+        .header__cart {
+            width: 80px;
+            text-align: right;
+        }
+    }
+
+    @media(max-width: 739px) {
+        :root {
+            --header-height: 54px;
+            --narbar-height: 0px;
+        }
+
+        .hide-on-moble {
+            display: none;
+        }
+
+        .header-with-search {
+            justify-content: space-between;
+        }
+
+        .header__logo {
+            width: unset;
+        }
+
+        .header__cart {
+            width: unset;
+        }
+
+        .header__search {
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: var(--header-height);
+            z-index: 1;
+            padding: 0 16px;
+            height: 45px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+            animation: mobileSearchSideIn linear 0.3s;
+            display: none;
+        }
+
+        @keyframes mobileSearchSideIn {
+            from {
+                top: calc(var(--header-height) / 2);
+                opacity: 0;
+            }
+
+            to {
+                top: var(--header-height);
+                opacity: 1;
+            }
+        }
+
+        .header__search-checkbox:checked~.header__search {
+            display: flex;
+        }
+
+        .header__search-history {
+            position: fixed;
+            top: calc(var(--header-height) + 46px);
+            width: 100%;
+            left: 0;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+        }
+
+        .header-mobile-search {
+            display: block;
+        }
+
+        .pagiantion-item__link {
+            height: 28px;
+            line-height: 28px;
+            font-size: 1.6rem;
+            min-width: 36px;
+        }
+
+        .pagiantion-item {
+            margin: 0;
+        }
+
+        .app__content {
+            margin: 0 4px;
+        }
+
+        .header__logo-img {
+            width: 110px;
+        }
+
+        .footer__content {
+            padding: 0 16px;
+        }
+
+        .footer__heading {
+            text-align: center;
+        }
+
+        .footer__item-link {
+            justify-content: center;
+        }
+
+        .footer__download {
+            justify-content: center;
+        }
+    }

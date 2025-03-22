@@ -1,0 +1,68 @@
+RewriteEngine On
+
+RewriteRule ^admin/home$ public/admin/Home.php [L]
+RewriteRule ^admin/users$ public/admin/Users.php [L]
+RewriteRule ^admin/users/edit/([A-Za-z0-9-]+) public/admin/EditUser.php?account=$1 [L]
+
+RewriteRule ^admin/system$ public/admin/EditSystem.php [L]
+RewriteRule ^admin/chatgpt$ public/admin/ChatGPT.php [L]
+RewriteRule ^admin/courses$ public/admin/Courses.php [L]
+RewriteRule ^admin/courses/edit/([A-Za-z0-9-]+) public/admin/EditCourse.php?id=$1 [L]
+RewriteRule ^admin/courses/([A-Za-z0-9-]+)/lesson/edit/([A-Za-z0-9-]+) public/admin/EditLesson.php?maKhoaHoc=$1&maBaiHoc=$2 [L]
+RewriteRule ^admin/courses/([A-Za-z0-9-]+)/lesson/([A-Za-z0-9-]+)/vocabulary/edit/([A-Za-z0-9-]+) public/admin/EditVocabulary.php?maKhoaHoc=$1&maBaiHoc=$2&maTuVung=$3 [L]
+
+RewriteRule ^Auth/DangNhap$ public/client/login.php [L]
+RewriteRule ^Auth/DangKy$ public/client/signup.php [L]
+RewriteRule ^Auth/QuenMatKhau$ public/client/quen_mat_khau.php [L]
+RewriteRule ^Auth/DangXuat$ public/client/logout.php [L]
+RewriteRule ^Auth/KichHoatEmail$ public/client/active_email.php [L]
+
+RewriteRule ^policy$ public/client/policy.php [L]
+RewriteRule ^terms public/client/terms.php [L]
+
+RewriteRule ^Page/KhoiTaoTaiKhoan$ public/client/setup_account.php [L]
+RewriteRule ^Page/Home$ public/client/home_page.php [L]
+RewriteRule ^Page/Study$ public/client/study.php [L]
+RewriteRule ^Page/OnTap$ public/client/on_tap.php [L]
+RewriteRule ^Page/OnSieuToc$ public/client/on_sieu_toc.php [L]
+RewriteRule ^Page/OnTuKho$ public/client/on_tu_kho.php [L]
+RewriteRule ^Page/KhoaHoc$ public/client/khoa_hoc.php [L]
+RewriteRule ^Page/AboutUs$ public/client/about_us.php [L]
+RewriteRule ^Page/BangXepHang$ public/client/bxh.php [L]
+RewriteRule ^Page/ChatBot$ public/client/chat_bot.php [L]
+RewriteRule ^Page/ChatBotStream$ public/chat-gpt/event-stream.php [L]
+
+RewriteRule ^Page/KhoaHoc/([A-Za-z0-9-]+) public/client/khoa_hoc_chi_tiet.php?maKhoaHoc=$1 [L]
+RewriteRule ^Page/BaiHoc/([A-Za-z0-9-]+)/([A-Za-z0-9-]+) public/client/bai_hoc_khoa_hoc_chi_tiet.php?maKhoaHoc=$1&maBaiHoc=$2 [L]
+RewriteRule ^Page/TrangCaNhan/(.*)/(.*)$ public/client/profile_page.php?taiKhoan=$1&type=$2 [L]
+RewriteRule ^Page/CaiDat/(.*)$ public/client/setting.php?type=$1 [L]
+
+
+
+RewriteRule ^quenmatkhau.php$ public/client/quen_mat_khau.php [L]
+RewriteRule ^login.php$ public/client/login.php [L]
+RewriteRule ^signup.php$ public/client/signup.php [L]
+RewriteRule ^khoitao.php$ public/client/setup_account.php [L]
+RewriteRule ^homepage.php$ public/client/home_page.php [L]
+RewriteRule ^study.php$ public/client/study.php [L]
+RewriteRule ^ontap.php$ public/client/on_tap.php [L]
+RewriteRule ^onsieutoc.php$ public/client/on_sieu_toc.php [L]
+RewriteRule ^ontukho.php$ public/client/on_tu_kho.php [L]
+
+RewriteRule ^khoahoc.php$ public/client/khoa_hoc.php [L]
+RewriteRule ^logout.php$ public/client/logout.php [L]
+RewriteRule ^aboutus.php$ public/client/about_us.php [L]
+RewriteRule ^bxh.php$ public/client/bxh.php [L]
+
+
+RewriteRule ^khoahoc.php/([A-Za-z0-9-]+) public/client/khoa_hoc_chi_tiet.php?maKhoaHoc=$1 [L]
+RewriteRule ^khoahoc-baihoc.php/([A-Za-z0-9-]+)/([A-Za-z0-9-]+) public/client/bai_hoc_khoa_hoc_chi_tiet.php?maKhoaHoc=$1&maBaiHoc=$2 [L]
+RewriteRule ^profile.php/(.*)/(.*)$ public/client/profile_page.php?taiKhoan=$1&type=$2 [L]
+RewriteRule ^setting.php/(.*)$ public/client/setting.php?type=$1 [L]
+
+RewriteRule ^active_email.php$ public/client/active_email.php [L]
+
+
+
+
+

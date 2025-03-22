@@ -1,0 +1,9 @@
+{
+    "name": "vendor/5fsgroup",
+    "description": "Do an cuoi ky web hcmue, web hoc ngoai ngu",
+    "minimum-stability": "beta",
+    "require": {
+        "facebook/graph-sdk": "^5.1",
+        "orhanerday/open-ai": "^4.7"
+    }
+}

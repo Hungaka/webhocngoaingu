@@ -1,0 +1,224 @@
+/* modal-study */
+
+.modal-study {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    z-index: 999;
+}
+
+.modal-study.open-modal-study {
+    display: flex;
+}
+
+.modal-study__container {
+    position: relative;
+    background-color: var(--white-color);
+    width: 600;
+    max-width: calc(100% - 32px);
+    padding: 24px 0 24px 20px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    animation: Appear ease 0.3s;
+}
+
+@keyframes Appear {
+    from {
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-study__close {
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.modal-study__close:hover {
+    color: red;
+}
+
+.modal-study__header {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.modal-study__suggest {
+    margin-bottom: 12px;
+}
+
+.modal-study__suggest-heading {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.modal-study__suggest-content {
+    display: flex;
+    align-items: center;
+}
+
+.modal-study__suggest-btn {
+    width: 80px;
+    height: 80px;
+    background-color: #74D8C1;
+    border-bottom: 5px solid #58A700;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.modal-study__suggest-btn:active {
+    opacity: 0.8;
+    transform: translateY(2px);
+}
+
+.modal-study__suggest-text {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-secondary);
+}
+
+.modal-study__choose-function__heading {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.modal-study__choose-function-wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.modal-study__choose-function-btn {
+    width: 80px;
+    height: 80px;
+    background-color: #74D8C1;
+    border-bottom: 5px solid #58A700;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.modal-study__choose-function-btn:active {
+    opacity: 0.8;
+    transform: translateY(2px);
+}
+
+.modal-study__choose-function-text {
+    font-size: 1.8rem;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--text-secondary);
+}
+
+.modal-study__choose-function-btn.modal-study__choose-function-btn--2 {
+    background-color: #95D8E6;
+    border-bottom: 5px solid #86C2CF;
+    position: relative;
+}
+
+.modal-study__choose-function-btn.modal-study__choose-function-btn--3 {
+    background-color: #A5E6DA;
+}
+
+.modal-study__choose-function-btn.modal-study__choose-function-btn--4 {
+    background: #BCC2CF;
+    border-bottom: 5px solid #A9AEBA;
+    position: relative;
+}
+
+.modal-study__notifi-practive {
+    width: 36px;
+    height: 36px;
+    background-color: #333;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-study__notifi-practive-number {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--white-color);
+}
+
+.modal-study__notifi-degree-lockup {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    bottom: -18px;
+    right: -14px;
+}
+
+.modal-header__text {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.modal-content-body {
+    border-radius: 20px;
+    padding: 24px 20px 24px 20px;
+    background-color: #fff;
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, .1), 0 0 0 1px rgba(10, 10, 10, .02);
+    color: #4a4a4a;
+    display: block;
+}
+
+.modal-content-body__text {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.modal-background {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-close-btn {
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    font-size: 40px;
+    cursor: pointer;
+    background-color: var(--black-color);
+
+}
+
+.modal-close-btn:hover {
+    background-color: red;
+}
